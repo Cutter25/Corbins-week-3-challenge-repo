@@ -1,2 +1,2 @@
 # Corbins-week-3-challenge-repo
-Repo for week 3 challenge
+don't forget to update the readme before Monday!!!
