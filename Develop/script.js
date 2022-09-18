@@ -13,7 +13,7 @@ var numberCharacters = ['1','2','3','4','5','6','7','8','9','0',];
 var generateBtn = document.querySelector("#generate");
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword());
+generateBtn.addEventListener("click", writePassword);
 
 // Write password to the #password input
 function writePassword() {
@@ -26,14 +26,13 @@ function writePassword() {
   } else {
     passwordText.value = "";
   }
-
 }
 
 function generatePassword() {
   var password = "";
-  for(var i = 0; i < characterLength; i++) {
-    var randomIndex = Math.floor(Math.random() * paramterCharacters.length);
-    password = password + paramterCharacters[randomIndex];
+  for(var i = 0; i < pswrdLength; i++) {
+      var randomIndex = Math.floor(Math.random() * paramterCharacters.length);
+      password = password + paramterCharacters[randomIndex];
   }
   return password;
 }
